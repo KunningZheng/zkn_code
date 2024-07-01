@@ -27,7 +27,7 @@ def read_coordinates_from_file(file_name, num):
     coordinates = []
     with open(file_name, 'r') as file:
         lines = file.readlines()
-        lines = lines[num-1:]  # 如从第2行开始读，即需要剔除lines的编号为0的元素，即从编号为1的开始保留
+        lines = lines[num-1:]  # 如从第2行开始读，即需要剔除lines的编号为0的元素，即从编号为1的开始保留啦啦啦
         for line in lines:
             values = line.strip().split('\t')
             try:
